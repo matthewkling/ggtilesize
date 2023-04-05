@@ -26,13 +26,13 @@ You can install the development version of ggtilesize from GitHub like so: `devt
 
 ## Example
 
-We use `geom_tile_size()` to create a tile-size plot. It requires the x, y, and scale aesthetics, with the latter corresponding to the size of tiles; other aesthetics such as fill, color, or alpha are supported as well. For simplicity we'll just map scale to the sum of x and y here:
+To create a tile-size plot we use `geom_tile_size()`. It requires the x, y, and scale aesthetics, with the latter corresponding to the size of tiles; other aesthetics such as fill, color, or alpha are supported as well. For simplicity we'll just map scale to the sum of x and y here:
 
 ```{r example, message = F, warning = F}
 library(tidyverse)
 library(ggtilesize)
 
-d <- expand_grid(x = -25:25, y = -25:25)
+d <- expand_grid(x = 0:10, y = 0:10)
 
 p <- ggplot(d, aes(x, y, scale = x + y)) +
       coord_fixed() +
