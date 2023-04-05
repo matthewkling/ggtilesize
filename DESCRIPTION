@@ -11,3 +11,5 @@ LazyData: true
 RoxygenNote: 7.2.1
 Depends: 
     ggplot2
+URL: https://github.com/matthewkling/ggtilesize
+BugReports: https://github.com/matthewkling/ggtilesize/issues
